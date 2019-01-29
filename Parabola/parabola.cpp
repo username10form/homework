@@ -116,6 +116,7 @@ cf = RGB(0, 100, 0);
 hPenOxy = CreatePen(PS_SOLID, 3, cf);	
 hOldPen = (HPEN)SelectObject(dc, hPenOxy);	
 // креслимо синусоіду	
+  /*
 for (x1 = 1; x1 < xmax; x1++)	
 {		
 xf = a + x1*(b - a) / xmax;	
@@ -124,6 +125,7 @@ y1 = yf*xmax / (b - a);
 y1 = ymax / 2 - y1;
 dc.LineTo(x1, y1);	
 }		
+  */
 SelectObject(dc, hOldPen);	
 DeleteObject(hPenOxy);
 DeleteObject(hNew);	
