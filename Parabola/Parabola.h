@@ -1,5 +1,3 @@
-// ProgramDlg.h : header file
-//
 
 #pragma once
 
