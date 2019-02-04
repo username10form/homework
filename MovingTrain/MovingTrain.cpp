@@ -1,5 +1,3 @@
-// ProgramDlg.cpp : implementation file
-//
 
 #include "stdafx.h"
 #include "Program.h"
@@ -35,32 +33,26 @@ BEGIN_MESSAGE_MAP(CProgramDlg, CDialog)
 	ON_WM_QUERYDRAGICON()
 END_MESSAGE_MAP()
 
-
-// CProgramDlg message handlers
-
 BOOL CProgramDlg::OnInitDialog()
 {
 	CDialog::OnInitDialog();
 
-	// Set the icon for this dialog.  The framework does this automatically
-	//  when the application's main window is not a dialog
-	SetIcon(m_hIcon, TRUE);			// Set big icon
-	SetIcon(m_hIcon, FALSE);		// Set small icon
 
-	// TODO: Add extra initialization here
+	SetIcon(m_hIcon, TRUE);		
+	SetIcon(m_hIcon, FALSE);		
 
-	return TRUE;  // return TRUE  unless you set the focus to a control
+
+
+	return TRUE;  
 }
 
-// If you add a minimize button to your dialog, you will need the code below
-//  to draw the icon.  For MFC applications using the document/view model,
-//  this is automatically done for you by the framework.
+
 
 void CProgramDlg::OnPaint()
 {
 	if (IsIconic())
 	{
-		CPaintDC dc(this); // device context for painting
+		CPaintDC dc(this); 
 
 		SendMessage(WM_ICONERASEBKGND, reinterpret_cast<WPARAM>(dc.GetSafeHdc()), 0);
 
@@ -107,8 +99,7 @@ void CProgramDlg::OnPaint()
 	}
 }
 
-// The system calls this function to obtain the cursor to display while the user drags
-//  the minimized window.
+
 HCURSOR CProgramDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
