@@ -106,7 +106,7 @@ HCURSOR CProgramDlg::OnQueryDragIcon()
 }
 
 
-//Locomotive
+//train
 
 void CProgramDlg::Corpus(int X1, int Y1, int DX, int DY)
 {
