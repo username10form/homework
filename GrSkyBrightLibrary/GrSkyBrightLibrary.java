@@ -127,3 +127,4 @@ public class GrSkyBrightLibrary extends Frame implements WindowListener { // п�
         //название окна
     }
 }
+//Готово
